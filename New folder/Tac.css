@@ -1,0 +1,30 @@
+*{padding: 0;
+    margin: 0;
+}
+body{
+    background-color: blue;
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Games{
+    height:60vmin;
+    width:60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height:18vmin;
+    width:18vmin;
+    background-color: rgb(248, 211, 3);
+    color: rgb(20, 19, 19);
+    border-radius: 1cm;
+}
