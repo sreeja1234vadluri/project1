@@ -6,11 +6,11 @@ boxes.forEach((box)=>{
     box.addEventListener("click",()=>{
         console.log("box is clicked");
         if(flagX){
-            box.innertext="X";
+            box.innerText="X";
             flagX=false;
         }
         else{
-            box.innertext="O";
+            box.innerText="O";
             flagX=true;
         }
         checkwinner();
@@ -18,16 +18,16 @@ boxes.forEach((box)=>{
 });
 const checkwinner=()=>{
     for (let pattern of winningPattern) {
-       let pos1=boxes[pattern[0]].innertext;
-       let pos2=boxes[pattern[1]].innertext;
-       let pos3=boxes[pattern[2]].innertext;
+       let pos1=boxes[pattern[0]].innerText;
+       let pos2=boxes[pattern[1]].innerText;
+       let pos3=boxes[pattern[2]].innerText;
     //    console.log(pos1);
     //    console.log(pos2);
     //    console.log(pos3);
        if(pos1 !="" && pos2!="" && pos3!=""){
 
         if(pos1==pos2 && pos2==pos3){
-            console.log("winner !" + pos1);
+            console.log("winner ! is => " + pos1);
             disableAllbuttons();
         }
        }
